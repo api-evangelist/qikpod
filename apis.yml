@@ -1,7 +1,14 @@
 aid: qikpod
 name: QikPod
-description: 'QikPod is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: services. This profile is a lead awaiting the enrichment pipeline.'
+description: 'QikPod was an Accel-backed Indian startup that built an automated parcel
+  locker network for last-mile e-commerce delivery, letting shoppers collect and return
+  packages from unattended smart lockers placed in apartments, offices, and retail
+  locations. The company has since rebranded and pivoted to Leapmile Robotics, a nano-warehouse
+  automation and intelligent fulfillment platform that uses robotics to handle storage,
+  retrieval, picking, auditing, and dispatch inside compact autonomous warehouse facilities.
+  The legacy qikpod.com domain now redirects to leapmile.com/qikpod. This profile is
+  maintained in the API Evangelist network as a company lead; no public developer
+  API surface has been found for either the QikPod or Leapmile properties.'
 url: https://raw.githubusercontent.com/api-evangelist/qikpod/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +16,35 @@ x-backed-by:
 - accel
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-rebrand:
+  now: Leapmile Robotics
+  website: https://leapmile.com/qikpod
+  note: qikpod.com 301-redirects to leapmile.com/qikpod
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Services
+- Robotics
+- Warehouse Automation
+- Logistics
+- Fulfillment
+- Smart Lockers
+- Last Mile Delivery
+- India
+image: https://leapmile-website.blr1.digitaloceanspaces.com/favicon_new.png
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +53,11 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://www.qikpod.com
+  url: https://leapmile.com/qikpod
+- type: DomainSecurity
+  url: security/qikpod-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
